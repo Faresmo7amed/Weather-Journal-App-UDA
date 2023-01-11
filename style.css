@@ -1,0 +1,201 @@
+/* Global & General Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Body Styles */
+body {
+  background: #fffff8;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+/* Weather Journal App Title Styles */
+.headline{
+  position: absolute;
+  top: 10px;
+  color: #B5D5C5;
+  font-size: 50px;
+  font-weight: bold;
+  box-shadow: 2px 2px 5px #000;
+  border-radius: 20px;
+  padding: 7px 10px;
+}
+/* Weather Journal App Structure Styles */
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 100vh;
+  width: 100%;
+  font-size: 20px;
+  background-image: url(./umbrela.jpg);
+  background-size: cover;
+}
+
+/* Most Recent Entry Content Styles */
+#date{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+}
+#temp{
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+#content {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Most Recent Entry Styles*/
+.entry {
+  background: #B5D5C5;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  position: absolute;
+  height: 160px;
+  bottom: 0;
+}
+/* zipcode input Styles */
+.zip {
+  width: 50%;
+  margin-top: -100px;
+  padding-bottom: 25px;
+}
+/*Most Recent Entry Div Content Styles*/
+#entryHolder {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  padding: 2px 0px 5px 15px;
+}
+
+/* Most Recent Entry Title Styles*/
+.title {
+  color: #fff;
+  font-size: 23px;
+  font-weight: 800;
+  padding: 5px 0 5px 15px;
+}
+
+/* Textarea Div Styles */
+.feel {
+  width: 50%;
+}
+/* Input Styles */
+input {
+  display: block;
+  height: 60px;
+  width: 100%;
+  background: #B5D5C5;
+  border-radius: 0 0 15px 15px;
+  color: #fff;
+  font-size: 23px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  padding-left: 15px;
+  font-size: 15px;
+  box-shadow: 5px 10px 25px #000;
+  font-weight: 500;
+}
+/* Input & Textarea Names Styles */
+label {
+  display: block;
+  font-size: 25px;
+  font-weight: 800;
+  color: #fff;
+  background-color: #B5D5C5;
+  border-radius: 15px 15px 0 0 ;
+  padding-left: 10px;
+}
+
+/* Feelings Textarea Styles */
+textarea {
+  background: #B5D5C5;
+  color: #fff;
+  font-size: 20px;
+  font-family: "Oswald", sans-serif;
+  border-radius: 0 0 15px 15px ;
+  width: 100%;
+  height: 100px;
+  font-size: 15px;
+  text-align: left;
+  padding-left: 15px;
+  padding-top: 15px;
+  box-shadow: 5px 10px 25px #000;
+  border: none;
+}
+/*Media Queries for title, input, textarea & labels in small screens*/
+@media screen and (max-width: 500px) {
+  .headline{
+    font-size: 30px;
+  }
+  .zip,
+  .feel {
+    width: 90%;
+  }
+  label {
+    font-size: 17px;
+  }
+}
+/*Media Queries for title, input, textarea & labels in medium screens*/
+@media screen and (min-width: 500px) and (max-width: 800px) {
+  label {
+    font-size: 20px;
+  }
+  .zip,
+  .feel {
+    width: 80%;
+  }
+}
+/* Generate Button Styles */
+#generate {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background: #B5D5C5;
+  color: #fff;
+  font-size: 26px;
+  font-family: "Oswald", sans-serif;
+  border: none;
+  box-shadow: 2px 4px 5px #444;
+  border-radius: 50%;
+  margin: 20px auto 20px auto;
+  box-shadow: 5px 10px 25px #000;
+  cursor: pointer;
+}
+
+
+/* Reset style for HTML element on active to have no border*/
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+  color: #fff;
+  font-size: 20px;
+}
+
+/* Style for Placeholder Text*/
+::placeholder { /* Firefox, Chrome, Opera */
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+  font-family: "Oswald", sans-serif;
+}
+
+
+
